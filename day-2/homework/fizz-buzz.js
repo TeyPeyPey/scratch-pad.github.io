@@ -10,9 +10,24 @@
  *  c. AND for the multiples of five print “Buzz”.
  *  d. FINALLY, for numbers which are multiples of both three and five print “FizzBuzz”.
 */
+
+/*
+I:function of numbers 1 to 100
+O:mutliples of three print "Fizz", multiples of five print "Buzz", multiples of both print "FizzBuzz"
+C:
+E:
+*/
+
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-
+var fizz = [];
+var buzz = [];
+var fizzBuzz = [];
+for (var i = 0; i < Array.length; i++){
+    if (array[i] % 3 === 0){
+        fizz.push(array[i])
+    }
+}
 
 
     // YOUR CODE GOES ABOVE HERE //

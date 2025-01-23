@@ -13,11 +13,12 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    //return function(greaterThanBase){return num > base;}
+//}
    
     
     // YOUR CODE ABOVE HERE //
-}
+};
 
 /** 
  * Given an input base to test against, which could be a String or Number, 
@@ -28,6 +29,9 @@ function createGreaterThanFilter(base) {
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
+    return function(){
+
+    }
   
     
     
@@ -44,7 +48,9 @@ function createLessThanFilter(base) {
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(){
+
+    }
     
     
     // YOUR CODE ABOVE HERE //
@@ -60,7 +66,9 @@ function createStartsWithFilter(startsWith) {
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    
+    return function(){
+
+    }
     
     
     // YOUR CODE ABOVE HERE //

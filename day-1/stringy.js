@@ -12,10 +12,18 @@
  * TIP: In JavaScript, how can we decipher the length of a String?
  * work?
  */
+
+/*
+I:function takes in a string.
+O:function returns a number of the length of the input string.
+C:
+E:
+*/
+
 function length(string) {
     // YOUR CODE BELOW HERE //
-
-   
+//return the input string's length
+   return string.length;
     
     // YOUR CODE ABOVE HERE //
 }
@@ -25,23 +33,40 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+
+/*
+I:function takes in a string.
+O:function returns a new string forced to lowercase.
+C:
+E:
+*/
+
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
-
+   //return string in lowercase
+   return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
+console.log(toLowerCase("TEYONCE"));
 
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+
+/*
+I:function takes in a string.
+O:function returns a new string forced to uppercase.
+C:
+E:
+*/
+
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+//return string in uppercase
+return string.toUpperCase();
     // YOUR CODE ABOVE HERE //
 }
+console.log(toUpperCase("micheal"));
 
 /**
  * Given an input String, return a new String forced to dash-case.
@@ -56,11 +81,18 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+
+/*
+I:function takes in a string
+O:function returns a new string forced to dash-case.
+C:
+E:
+*/
+
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    //return string forced to dash-case
+return string.join('-');
     // YOUR CODE ABOVE HERE //
 }
 
@@ -76,6 +108,14 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/*
+I:given a string and a character as the parameters
+O:return true if the string begins with the character, false otherwise
+C:
+E:
+*/
+
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
@@ -109,8 +149,16 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+/*
+I:two strings
+O:return the strings concatenated into one
+C:
+E:
+*/
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+//return the two strings concat as one
+return stringOne.concat(stringTwo);
 
 
 
@@ -127,9 +175,17 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+/*
+I:any number of strings 
+O:return all the strings joined together
+C:
+E:
+*/
+
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
+    return args.concat(stringOne + StringTwo);
 
 
     // YOUR CODE ABOVE HERE //
@@ -144,12 +200,23 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+/*
+I:two strings
+O:return the longest string of the two 
+C:
+E:
+*/
+
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+   var long1 = 0;
+   if (stringOne.length > long1){
+    long1 = stringOne.length;
+   } else {
+    long1 = stringTwo.length;
+   }
     // YOUR CODE ABOVE HERE //
+    return long1;
 }
 
 /**
@@ -159,9 +226,23 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+/*
+I:two strings
+O:return 1 if the first string is higher in the alphabet then the second, return -1 if the second is higher, return 0 if they're equal
+C:
+E:
+*/
+
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+if (stringOne > stringTwo){
+    return 1
+} else if {
+    (stringTwo > stringOne)
+    return -1
+} else {
+    return 0
+}
     // YOUR CODE ABOVE HERE //
 }
 

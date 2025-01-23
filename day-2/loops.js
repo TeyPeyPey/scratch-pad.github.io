@@ -10,34 +10,61 @@
  * Given an input Array, loop forward over the Array and print its values 
  * using console.log().
  */
+
+/*
+I:loop forward over the input array
+O:prints the array values to the console in number form
+C:
+E:
+*/
+
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  //loop over the array 
+  for (var i = 0; i < array.length; i++){
+  //print the values to the console using console.log
+  console.log(array[i]);
+  }
   // YOUR CODE ABOVE HERE //
+
 }
 
 /** 
  * Given an input Array, loop backwards over the Array and print its values 
  * using console.log().
  */
+/*
+I:loop backwards over the input array
+O:print the array values to the console in number form
+C:
+E:
+*/
+
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  //loop over the array backwards
+  for (var i = array.length - 1; i >= 0; i--){
+  //print the values to the console using console.log
+  console.log(array[i]);
+  }
   // YOUR CODE ABOVE HERE //
 }
 
 /** 
  * Given an input Object, return an Array containing the Object keys.
  */
+
+/*
+I:given an input object
+O:return an array containing the inputs object keys in string form
+C:
+E:
+*/
+
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+//return an array containing the input object keys
+return getObjectKeys.object[keys];
 
   // YOUR CODE ABOVE HERE //
 }
