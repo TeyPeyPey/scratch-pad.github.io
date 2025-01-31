@@ -205,9 +205,9 @@ E:
 
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = [];
-    args = stringOne.concat(stringTwo);
-    return args
+    var args = [stringOne, stringTwo];
+    return args.join('');
+
     // YOUR CODE ABOVE HERE //
 }
 /**
