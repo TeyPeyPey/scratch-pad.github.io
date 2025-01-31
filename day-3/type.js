@@ -14,9 +14,19 @@
  * 
  * HINT: There is a method that can help with this.
  */
+/*
+I:value 
+O:true if the value is an array, false if otherwise 
+C:
+E:
+*/
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
+    if (Array.isArray(value)) {
+        return true;
+    } else {
+        return false;
+    }
     
     
     
@@ -36,6 +46,12 @@ function isArray(value) {
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
  */
+/*
+I:value
+O:true if the value if an Object intended as a collection, false if otherwise
+C:
+E:
+*/
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
