@@ -134,10 +134,7 @@ if (string.toLowerCase().startsWith(char.toLowerCase())) {
     return false;
 }
 }
-//string.toLowerCase() === char.toLowerCase();
     // YOUR CODE ABOVE HERE //
-console.log(beginsWith('hello', 'h'));
-console.log(beginsWith('Hello', 'T'));
 
 /**
  * Given an input String and a single character, return true if the String
@@ -151,17 +148,22 @@ console.log(beginsWith('Hello', 'T'));
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/*
+I:string
+O:true if the string ends with the character, false otherwise 
+C:
+E:
+*/
+
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-if (string.endsWith() === char) {
+if (string.toLowerCase().endsWith(char.toLowerCase())) {
     return true;
 } else {
     return false;
 }
     // YOUR CODE ABOVE HERE //
 }
-console.log('hello', 'o');
-console.log('tony', 'y');
 
 /**
  * Given two input Strings, return the Strings concatenated into one.
@@ -208,7 +210,6 @@ function join(stringOne, stringTwo) {
     return args
     // YOUR CODE ABOVE HERE //
 }
-console.log(join('Please', 'Help'));
 /**
  * Given two Strings, return the longest of the two.
  *
