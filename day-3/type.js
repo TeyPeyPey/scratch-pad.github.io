@@ -54,7 +54,11 @@ E:
 */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
+    if (value instanceof Object === Object){
+        return true;
+    } else {
+        return false;
+    }
 
     
     
@@ -70,6 +74,13 @@ function isObject(value) {
  * 
  * TIP: Similar to isObject, but we must return true if the value is an Array.
  */
+/*
+I:value 
+O:true if its either an array or an object intended as a collection 
+C:
+E:
+*/
+
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     
@@ -98,6 +109,12 @@ function isCollection(value) {
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
  */ 
+/*
+I:value 
+O:
+C:
+E:
+*/
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
     
