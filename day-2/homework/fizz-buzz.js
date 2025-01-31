@@ -23,11 +23,7 @@ function fizzBuzz() {
 var fizz = [];
 var buzz = [];
 var fizzBuzz = [];
-for (var i = 0; i < Array.length; i++){
-    if (array[i] % 3 === 0){
-        fizz.push(array[i])
-    }
-}
+
 
 
     // YOUR CODE GOES ABOVE HERE //

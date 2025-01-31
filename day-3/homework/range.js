@@ -21,14 +21,28 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+/*
+I: create a function that takes two integers as paramaters
+O:returns an array containing all integers between the two parameters
+C:if the first argument is greater than the second return the range in reverse order
+E:
+*/
+
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    var returnOutput = [];
+    for (var i = start; i <= end; i++) {
+        returnOutput.push(i);
+    } if (start > end) {
+        range.reverse(); 
+    }
+    return returnOutput; 
+    console.log(range(6, 15));
+    console.log(range(5, 6));  
     // YOUR CODE GOES ABOVE HERE //
 }
+
+
 
 
 

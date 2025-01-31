@@ -64,18 +64,30 @@ E:
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
 //return an array containing the input object keys
-return getObjectKeys.object[keys];
+return object.keys(object);
 
   // YOUR CODE ABOVE HERE //
 }
+
 
 /** 
  * Given an input Object, loop over the Object and print its keys 
  * using console.log().
  */
+/*
+I:an input object 
+O:loop over the object and print its keys 
+C:
+E:
+*/
+
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+  for (key in printObjectKeys) {
+    if (printObjectKeys.hasOwnProperty(key));
+  }
+  value = printObjectKeys[key];
+  console.log(key, value);
   
   
   
@@ -85,9 +97,16 @@ function printObjectKeys(object) {
 /** 
  * Given an input Object, return an Array containing the Object's values.
  */
+/*
+I:an input object 
+O:return an array containing the objects values. 
+C:
+E:
+*/
+
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+  return Object.values(object);
   
   
   
@@ -98,6 +117,13 @@ function getObjectValues(object) {
  * Given an input Object, loop over the Object and print its values 
  * using console.log().
  */
+/*
+I:input object
+O:loop over the object and print its values 
+C:
+E:
+*/
+
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
   

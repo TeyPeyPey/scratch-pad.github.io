@@ -23,10 +23,13 @@ E:
 function length(string) {
     // YOUR CODE BELOW HERE //
 //return the input string's length
-   return string.length;
+return string.length
+}
+console.log('teyonce');
+
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 
@@ -91,10 +94,17 @@ E:
 
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-    //return string forced to dash-case
-return string.join('-');
+        // YOUR CODE BELOW HERE //
+        //create array for input string 
+        var placeHolder = string.split(' ');
+        //join the array into a string with dashes 
+        var ans = placeHolder.join('-');
+        return ans.toLowerCase();
+        // YOUR CODE ABOVE HERE //
+    }
+console.log(toDashCase('Hello World'));
     // YOUR CODE ABOVE HERE //
-}
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -118,11 +128,16 @@ E:
 
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
-
-    // YOUR CODE ABOVE HERE //
+if (string.startsWith() === char) {
+    return true;
+} else {
+    return false;
 }
+}
+//string.toLowerCase() === char.toLowerCase();
+    // YOUR CODE ABOVE HERE //
+console.log(beginsWith('hello', 'h'));
+console.log(beginsWith('Hello', 'T'));
 
 /**
  * Given an input String and a single character, return true if the String
@@ -184,13 +199,12 @@ E:
 
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
-    return args.concat(stringOne + StringTwo);
-
-
+    var args = [];
+    args = stringOne.concat(stringTwo);
+    return args
     // YOUR CODE ABOVE HERE //
 }
-
+console.log(join('Please', 'Help'));
 /**
  * Given two Strings, return the longest of the two.
  *
@@ -234,19 +248,8 @@ E:
 */
 
 function sortAscending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-if (stringOne > stringTwo){
-    return 1
-} else if {
-    (stringTwo > stringOne)
-    return -1
-} else {
-    return 0
-}
-    // YOUR CODE ABOVE HERE //
-}
 
-
+}
 /**
  * Given two Strings, return 1 if the first is lower in alphabetical order (meaning later in the alphabet) than
  * the second, return -1 if the second is lower in alphabetical order than the

@@ -11,6 +11,13 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  */
+/*
+I:input base of either a string or number 
+O:return a function that tests whether a given value is greater than the base
+C:
+E:
+*/
+
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     //return function(greaterThanBase){return num > base;}
@@ -26,6 +33,13 @@ function createGreaterThanFilter(base) {
  * base. (test means return true or false)
  * 
  */
+/*
+I:input base of either a string or number
+O:return a function that tests whether a given value is less then the base 
+C:test means true or false 
+E:
+*/
+
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
@@ -45,6 +59,13 @@ function createLessThanFilter(base) {
  * 
  * This function needs to be case insensitive.
  */
+/*
+I:single character, startsWith
+O:return a function that tests whether a given string starts with the startsWith character
+C:function needs to be case insensitive
+E:
+*/
+
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     
@@ -63,6 +84,13 @@ function createStartsWithFilter(startsWith) {
  * 
  * This function needs to be case insensitive.
  */
+/*
+I:single character, endsWith 
+O:return a function that tests whether a given string ends with the endsWith character
+C:function needs to be case insensitive
+E:
+*/
+
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
@@ -81,6 +109,13 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+/* 
+I:array of strings and a function designed to modify a string 
+O:return the array of the strings modified
+C:
+E:
+*/
+
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
     
@@ -102,6 +137,13 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+/*
+I: array of strings and a function designed to test the string in some way
+O:return a boolean on whether it passed, return true if ALL strings pass the test.
+C:
+E:
+*/
+
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
     
