@@ -128,7 +128,7 @@ E:
 
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-if (string.startsWith() === char) {
+if (string.toLowerCase().startsWith(char.toLowerCase())) {
     return true;
 } else {
     return false;
