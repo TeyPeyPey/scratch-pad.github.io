@@ -153,11 +153,15 @@ console.log(beginsWith('Hello', 'T'));
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
+if (string.endsWith() === char) {
+    return true;
+} else {
+    return false;
+}
     // YOUR CODE ABOVE HERE //
 }
+console.log('hello', 'o');
+console.log('tony', 'y');
 
 /**
  * Given two input Strings, return the Strings concatenated into one.
