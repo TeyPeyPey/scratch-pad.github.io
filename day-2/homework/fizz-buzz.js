@@ -20,22 +20,19 @@ E:
 
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-let output = [];
-for (let i = 1; i <= 0; i++) {
+for (var i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-        output.push("fizzBuzz");
+        console.log("FizzBuzz");
     } else if (i % 3 === 0) {
-        output.push('fizz');
+        console.log('Fizz');
     } else if (i % 5 === 0) {
-        output.push('buzz');
-    } else {
-        output.push(i.toString());
-    }
+        console.log('Buzz');
+} else {
+    console.log(i);
 }
-return output;
 }
     // YOUR CODE GOES ABOVE HERE //
-
+}
 
 
 

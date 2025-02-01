@@ -73,11 +73,9 @@ E:
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
     
-    return function(){
-
+    return function(string){
+        return string.toLowerCase().startsWith(startsWith.toLowerCase());
     }
-    
-    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -98,11 +96,9 @@ E:
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    return function(){
-
+    return function(string) {
+    return string.toLowerCase().endsWith(endsWith.toLowerCase());
     }
-    
-    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -122,10 +118,7 @@ E:
 
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return strings.map(modify);
     // YOUR CODE ABOVE HERE //
 }
 
@@ -150,10 +143,7 @@ E:
 
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return strings.every(test);
     // YOUR CODE ABOVE HERE //
 }
 

@@ -54,15 +54,11 @@ E:
 */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    if (value instanceof Object === Object){
+    if (value instanceof Object === value){
         return true;
     } else {
         return false;
-    }
-
-    
-    
-    
+    } 
     // YOUR CODE ABOVE HERE //
 }
 
@@ -83,7 +79,11 @@ E:
 
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
+    if (Array.isArray(value) || (typeof value === 'object')){
+        return true;
+    } else {
+        return false;
+    }
     
     
     
@@ -111,7 +111,7 @@ function isCollection(value) {
  */ 
 /*
 I:value 
-O:
+O:the type of value as a string
 C:
 E:
 */
