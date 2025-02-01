@@ -251,7 +251,13 @@ E:
 */
 
 function sortAscending(stringOne, stringTwo) {
-
+if (stringOne < stringTwo){
+    return 1;
+} else if (stringOne > stringTwo) {
+    return -1;
+} else {
+    return 0;
+}
 }
 /**
  * Given two Strings, return 1 if the first is lower in alphabetical order (meaning later in the alphabet) than
@@ -262,7 +268,13 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    if (stringOne > stringTwo){
+        return 1;
+    } else if (stringOne < stringTwo) {
+        return -1;
+    } else {
+        return 0;
+    }
 
 
 
