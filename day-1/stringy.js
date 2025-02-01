@@ -228,14 +228,12 @@ E:
 
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-   var long1 = 0;
-   if (stringOne.length > long1){
-    long1 = stringOne.length;
+   if (stringOne.length > stringTwo.length){
+    return stringOne;
    } else {
-    long1 = stringTwo.length;
+    return stringTwo;
    }
     // YOUR CODE ABOVE HERE //
-    return long1;
 }
 
 /**
