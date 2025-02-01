@@ -117,13 +117,9 @@ E:
 */
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return typeof value;
     // YOUR CODE ABOVE HERE //
 }
-
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
