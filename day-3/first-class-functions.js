@@ -20,12 +20,16 @@ E:
 
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    //return function(greaterThanBase){return num > base;}
-//}
+    return function(value) {
+    if (typeof base === 'string' && typeof value === 'string') {
+        return value > base;
+    }
+        return value > base;
+}
    
     
     // YOUR CODE ABOVE HERE //
-};
+}
 
 /** 
  * Given an input base to test against, which could be a String or Number, 
@@ -43,12 +47,12 @@ E:
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
-    return function(){
-
+    return function(value){
+        if (typeof base === 'string' && typeof value === 'string') {
+            return value < base
+        }
+        return value < base
     }
-  
-    
-    
     // YOUR CODE ABOVE HERE //
 }
 
