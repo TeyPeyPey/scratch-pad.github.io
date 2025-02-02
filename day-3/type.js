@@ -48,13 +48,13 @@ function isArray(value) {
  */
 /*
 I:value
-O:true if the value if an Object intended as a collection, false if otherwise
+O:true if the value is an Object intended as a collection, false if otherwise
 C:
 E:
 */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    if (value instanceof Object === value){
+    if (value instanceof Date){
         return true;
     } else {
         return false;
