@@ -54,9 +54,20 @@ E:
 */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-
-    // YOUR CODE ABOVE HERE //
+if(Array.isArray(value)) {
+    return false;
+} else if (value === null){
+    return false;
+} else if (value instanceof Date) {
+    return false;
+} else if (typeof value === 'object'){
+    return true;
+} else {
+    return false;
 }
+    // YOUR CODE ABOVE HERE //
+};
+
 
 
 
@@ -80,11 +91,10 @@ function isCollection(value) {
     } else {
         return false;
     }
-    
-    
-    
     // YOUR CODE ABOVE HERE //
-}
+};
+console.log(isCollection({name: 'Pete', age: 12}));
+console.log(isCollection('nope'));
 
 /**
  * Given an input value, return the type of the value as a String
@@ -113,7 +123,13 @@ E:
 */
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    return typeof 'value';
+    if (Array,isArray(value)){
+        return 'array';
+    } else if (value === null){
+        return 'null';
+    } else if (typeof value === 'object'){
+        return typeof value;
+    } else if ()
     // YOUR CODE ABOVE HERE //
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
