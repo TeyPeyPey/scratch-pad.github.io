@@ -31,10 +31,13 @@ E:
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     var returnOutput = [];
+    var returnThis = [];
     for (var i = start; i <= end; i++) {
         returnOutput.push(i);
-    } if (start > end) {
-        range.reverse(); 
+    } if (start >= end){
+        for (var i = start; i >= end; i--){
+            returnOutput.push(i);
+        }
     }
     return returnOutput; 
     console.log(range(6, 15));

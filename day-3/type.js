@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { isNumber } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: TYPE
  */
@@ -129,13 +131,16 @@ E:
 */
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    if (Array,isArray(value)){
+    if (Array.isArray(value)){
         return 'array';
     } else if (value === null){
         return 'null';
-    } else if (typeof value === 'object'){
+    } else if (value instanceof Date){
+        return 'date';
+    } else {
         return typeof value;
     }
+    
     // YOUR CODE ABOVE HERE //
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
