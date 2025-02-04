@@ -54,11 +54,7 @@ E:
 */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    if (value instanceof Date){
-        return true;
-    } else {
-        return false;
-    } 
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -117,7 +113,7 @@ E:
 */
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    return typeof value;
+    return typeof 'value';
     // YOUR CODE ABOVE HERE //
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
