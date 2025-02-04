@@ -129,7 +129,7 @@ function typeOf(value) {
         return 'null';
     } else if (typeof value === 'object'){
         return typeof value;
-    } else if ()
+    } else if (){}
     // YOUR CODE ABOVE HERE //
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
