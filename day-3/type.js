@@ -86,11 +86,17 @@ E:
 
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    if (Array.isArray(value) || (typeof value === 'object')){
-        return true;
-    } else {
-        return false;
-    }
+ if(Array.isArray(value)){
+    return true;
+ } else if (value === null){
+    return false;
+ } else if (value instanceof Date){
+    return false;
+ } else if (typeof value === 'object'){
+    return true;
+ } else {
+    return false;
+ }
     // YOUR CODE ABOVE HERE //
 };
 console.log(isCollection({name: 'Pete', age: 12}));
@@ -129,7 +135,7 @@ function typeOf(value) {
         return 'null';
     } else if (typeof value === 'object'){
         return typeof value;
-    } else if (){}
+    }
     // YOUR CODE ABOVE HERE //
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
