@@ -53,13 +53,13 @@ function makeContactList(){
         return contacts.push(contact);
     },
     findContact: function(fullName){
-        return contacts.find(contact => contact.nameFirst + ' ' + contact.nameLast  === fullName);
+        return contacts.find(contact => contact.nameFirst + ' ' + contact.nameLast  ===  fullName);
     },
     removeContact: function(contact){
         return contacts = contacts.filter(c => c !== contact);
     },
     printAllContactNames: function(){
-        return contacts.map(contact => contact.nameFirst + nameLast).join('\n');
+        return contacts.map(contact => contact.nameFirst + contact.nameLast).join('\n');
     },
     }
     }
