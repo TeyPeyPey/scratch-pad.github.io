@@ -37,33 +37,33 @@
 function makeContact(id, nameFirst, nameLast) {
     return {id, nameFirst, nameLast}
 } 
-console.log(makeContact(206, 'Teyonce', 'Peyton'))
+console.log(makeContact(206, 'Teyonce', 'Peyton'));
+var contacts = [];
+var contact;
 function makeContactList(){
     /*
     you need something here to hold contacts. See length api for hint:
     */
-   var contacts = [];
    return {
     //we implemented the length api for you
     length: function(){
         return contacts.length;
     },
-    addContacts: function(){
+    addContact: function(contact){
         return contacts.push(contact);
     },
-    findContact: function(){
-        return contacts.find(contact => contact.fullName === fullName);
+    findContact: function(fullName){
+        return contacts.find(contact => contact.nameFirst + nameLast  === fullName);
     },
-    removeContact: function(){
-
+    removeContact: function(contact){
+        return contacts = contacts.filter(c => c !== contact);
     },
     printAllContactNames: function(){
-
+        return contacts.map(contact => contact.nameFirst + nameLast).join('\n');
     },
     }
     }
-makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
-
+//makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 
 
 // YOUR CODE GOES ABOVE HERE //
