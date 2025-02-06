@@ -39,7 +39,7 @@ function makeContact(id, nameFirst, nameLast) {
 } 
 console.log(makeContact(206, 'Teyonce', 'Peyton'));
 var contacts = [];
-var contact;
+var contact = {};
 function makeContactList(){
     /*
     you need something here to hold contacts. See length api for hint:
@@ -63,7 +63,8 @@ function makeContactList(){
     },
     }
     }
-    console.log(makeContactList(findContact(fullName)));
+    console.log(makeContactList(length));
+    console.log(makeContactList(addContact));
 //makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 
 
