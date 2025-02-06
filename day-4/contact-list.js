@@ -38,9 +38,9 @@ function makeContact(id, nameFirst, nameLast) {
     return {id, nameFirst, nameLast}
 } 
 console.log(makeContact(206, 'Teyonce', 'Peyton'));
-var contacts = [];
-var contact = {};
 function makeContactList(){
+    var contacts = [];
+    var contact = {};
     /*
     you need something here to hold contacts. See length api for hint:
     */
@@ -59,7 +59,7 @@ function makeContactList(){
         return contacts = contacts.filter(c => c !== contact);
     },
     printAllContactNames: function(){
-        return contacts.map(contact => contact.nameFirst + contact.nameLast).join('\n');
+        return contacts.map(contact => contact.nameFirst + ' ' + contact.nameLast).join('\n');
     },
     }
     }
