@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { isNumber } = require("lodash");
+//const { isNumber } = require("lodash");
 
 /**
  * IN CLASS EXERCISE: TYPE

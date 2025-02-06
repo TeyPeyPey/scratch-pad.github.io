@@ -53,7 +53,7 @@ function makeContactList(){
         return contacts.push(contact);
     },
     findContact: function(fullName){
-        return contacts.find(contact => contact.nameFirst + ' ' + contact.nameLast  ===  fullName);
+        return contacts.find(contact => contact.nameFirst + ' ' + contact.nameLast === fullName);
     },
     removeContact: function(contact){
         return contacts = contacts.filter(c => c !== contact);
@@ -63,6 +63,7 @@ function makeContactList(){
     },
     }
     }
+    console.log(makeContactList(findContact(fullName)));
 //makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 
 
